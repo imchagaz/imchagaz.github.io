@@ -1,0 +1,622 @@
+@charset "UTF-8";
+* {
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+h1 {
+  padding: 40px;
+  text-align: center;
+  font-size: 0.8rem;
+  font-family: sans-serif;
+  color: #000;
+}
+
+h2 {
+  margin: 0;
+  padding: 50px;
+  text-align: center;
+  font-size: 35px;
+  font-family: sans-serif;
+  color: #000;
+  display: inline-block;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  border-radius: 0px;
+  color: #000;
+  font-family: sans-serif;
+  font-size: 30px;
+}
+
+/* INICIO ANUNCIO PIDA EN MINUTOS */
+.container-fluid {
+  width: 100%;
+  background-color: rgba(255, 94, 0, 0.9529411765);
+}
+.container-fluid p {
+  text-align: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+/* FIN ANUNCIO PIDA EN MINUTOS */
+/* INICIO AVISO PIDA EN MINUTOS INDEX */
+.aviso {
+  width: 100%;
+  background-color: #cccccc;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.scroll-text {
+  text-align: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 1rem;
+  color: #000;
+  animation: scroll-text 90s linear infinite;
+  display: inline-block;
+}
+
+@keyframes scroll-text {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+/* FIN AVISO PIDA EN MINUTOS INDEX */
+/* INICIO MENU PRINCIPAL*/
+.header {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  justify-content: space-between;
+}
+
+.petstop {
+  width: 40px;
+  margin-left: 8px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  text-decoration: none;
+}
+
+.container ul {
+  list-style: none;
+}
+
+.container li a {
+  margin: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-family: sans-serif;
+  transition: color 0.3s;
+}
+
+.container li a:hover {
+  color: rgba(255, 166, 0, 0.9529411765);
+}
+
+/* FIN MENU PRINCIPAL */
+/* INICIO ACCESO RAPIDO PERROS Y GATOS */
+.acceso-rapido {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.acceso-rapido .boton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 570px;
+  height: 200px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(111, 21, 21, 0.1);
+  text-decoration: none;
+  transition: background-color 0.3s;
+  overflow: hidden;
+}
+
+.acceso-rapido .boton img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 70px;
+}
+
+.acceso-rapido .boton:hover {
+  background-color: rgb(84, 84, 84);
+}
+
+/* FIN ACCESO RAPIDO PERROS Y GATOS */
+/* INICIO TARJETA PETSTOP */
+.tarjeta-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  margin: 0px;
+  margin-top: 10px;
+  font-family: Arial, sans-serif;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 50%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card .content {
+  padding: 30px;
+  flex: 1;
+}
+
+.card .content h2 {
+  font-size: 1.5em;
+  margin: 0;
+  color: #333;
+}
+
+.card .content p {
+  font-size: 1em;
+  color: #666;
+  margin: 20px 0;
+}
+
+.card .content a {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.card .content a:hover {
+  background-color: #0056b3;
+}
+
+/* FIN TARJETA PETSTOP */
+/* INICIO PRESENTACION STAFF */
+.staff {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  margin: 0;
+  padding: 0;
+}
+
+.grid-container {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 colunas iguais */
+  gap: 20px; /* Espaçamento entre itens */
+  max-width: 1200px; /* Largura máxima do grid */
+  text-align: center; /* Centraliza texto dentro de cada item */
+}
+
+.grid-item {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.grid-item p {
+  margin: 10px 0 0;
+  font-size: 0.9em;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr); /* Ajusta para 2 colunas no mobile */
+  }
+}
+@media (max-width: 480px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* Ajusta para 1 coluna em telas muito pequenas */
+  }
+}
+/* FIN PRESENTACION STAFF */
+.menu .menu-lines {
+  position: absolute;
+  z-index: 999;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+}
+
+.menu {
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+.menu .menu-faketrigger {
+  position: absolute;
+  z-index: 1000;
+  width: 35px;
+  height: 35px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.menu .menu-lines span {
+  display: block;
+  width: 35px;
+  height: 5px;
+  margin-bottom: 10px;
+  background-color: #cdcdcd;
+  border-radius: 3px;
+  transition: all ease 0.2s;
+}
+
+.menu .menu-faketrigger:checked ~ .menu-lines span {
+  background-color: #232323;
+}
+
+.menu .menu-faketrigger:checked ~ .menu-lines span:nth-child(1) {
+  transform-origin: 0% 0%;
+  transform: rotate(45deg) scaleX(1.25);
+}
+
+.menu .menu-faketrigger:checked ~ .menu-lines span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu .menu-faketrigger:checked ~ .menu-lines span:nth-child(3) {
+  transform-origin: 0% 100%;
+  transform: rotate(-45deg) scaleX(1.25);
+}
+
+.menu ul {
+  font-family: sans-serif;
+  position: absolute;
+  z-index: 998;
+  left: 0;
+  top: 0;
+  width: 300px;
+  height: calc(100vh - 100px);
+  padding-top: 100px;
+  background-color: #ededed;
+  margin-left: -300px;
+  transition: all ease 0.2s;
+}
+
+.menu .menu-faketrigger:checked ~ ul {
+  margin-left: 0;
+}
+
+.menu ul li {
+  padding: 10px 30px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 22px;
+  transition: all ease 0.3s;
+}
+
+.menu ul li a:hover {
+  color: #ff7700;
+}
+
+/* FINAL TESTE MENU HAMBURGUESA */
+/* INICIO MENU NAVEGACION INTERNO GATOS */
+.flexbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  font-family: sans-serif;
+}
+
+.sub-menu {
+  margin: 0px;
+  margin-bottom: 100px;
+}
+
+.lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.lista li {
+  margin: 0;
+}
+
+.lista a {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  margin: 10px;
+  border-radius: 50px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.lista a:hover {
+  color: #ff7e5f;
+}
+
+/* FIN MENU NAVEGACION INTERNO GATOS */
+/* INICIO FOOTER */
+footer {
+  background-color: #000;
+  overflow: hidden;
+}
+
+p {
+  font-family: sans-serif;
+  padding: 5px;
+  text-align: center;
+  color: #fff;
+  margin-top: #000;
+}
+
+/* FIN FOOTER */
+.gradiente-body {
+  background: linear-gradient(#fff, #a5e0d7);
+}
+
+/* INICIO TARJETA AYUDA */
+.container-general {
+  width: 55%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  background-color: white;
+  border-radius: 11px;
+  margin-top: 40vh;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-family: Arial, sans-serif;
+  position: relative;
+  top: 30%;
+  transform: translateY(-50%);
+}
+
+.container-general input[type=text],
+.container-general input[type=email] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.container-general input[type=submit] {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #545454;
+  color: white;
+  border: 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.container-general input[type=submit]:hover {
+  background-color: #ff7700;
+}
+
+.container-general h2 {
+  margin-bottom: 15px;
+  font-size: 24px;
+  color: #333;
+}
+
+.container-general p {
+  margin-bottom: 20px;
+  color: #555;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* FIN TARJETA AYUDA */
+.menu {
+  display: none;
+}
+
+@media (min-width: 769px) {
+  .carousel {
+    margin-top: 0;
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    display: none;
+    overflow: hidden;
+  } /* MENU PRINCIPAL */
+  .menu {
+    margin-left: 10px;
+    display: block;
+  } /* MENU LATERAL */
+  .bootstrap {
+    margin-top: 50px;
+  }
+  .petstop {
+    margin: 10px;
+    margin-left: 85%;
+  }
+  .sub-petstop {
+    margin-left: 75%;
+  } /* ICONE GATO HTMLS */
+  .flexbox .sub-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .lista {
+    display: flex;
+    display: block;
+    text-align: center;
+    background-color: #ebebeb;
+    border-radius: 20px;
+    margin-top: 30px;
+  } /* PRODUCTOS PERRO Y GATO LISTADO */
+  li {
+    padding: 5px;
+  } /* PRODUCTOS PERRO Y GATO LISTADO */
+  .lista-productos h3 {
+    margin-bottom: 40px;
+  } /* PRODUCTOS PERRO Y GATO LISTADO */
+  .container-perfil {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    margin-top: 2em;
+    text-align: center;
+  } /* TARJETA AYUDA */
+  .container-ayuda {
+    width: 80%;
+    padding: 15px;
+  } /* TARJETA AYUDA */
+  .container-ayuda h2 {
+    font-size: 1.5rem;
+  } /* TARJETA AYUDA */
+  .container-ayuda p {
+    font-size: 0.9rem;
+  } /* TARJETA AYUDA */
+  .box input[type=text], .box input[type=email] {
+    padding: 2px;
+    font-size: 0.9rem;
+  } /* TARJETA AYUDA */
+  .container-submit input[type=submit] {
+    padding: 3px 13px;
+    margin-left: 75%;
+    font-size: 0.9rem;
+  }
+}
+/* BOTON PERRO-GATO RESPOSIVE */
+@media (max-width: 768px) {
+  .acceso-rapido {
+    flex-direction: column;
+    padding: 50px;
+    margin-top: 30px;
+  }
+  .boton {
+    flex: 1 1 auto;
+    text-align: center;
+  }
+}
+/* INICIO H1, H2, H3 */
+@media (max-width: 768px) {
+  h1 {
+    padding: 20px; /* Reduz o padding para não ocupar tanto espaço */
+    font-size: 1.2rem; /* Ajusta o tamanho da fonte */
+  }
+  h2 {
+    padding: 20px;
+    font-size: 24px;
+  }
+  h3 {
+    padding: 10px; /* Reduz o padding */
+    font-size: 20px; /* Ajusta o tamanho da fonte */
+  }
+}
+/* FIN H1, H2, H3 */
+/* INICIO CONTAINER AYUDA */
+@media (max-width: 768px) {
+  .container-general {
+    width: 90%;
+    max-width: 500px;
+    margin-top: 38vh;
+  }
+  .portada img {
+    max-width: 80%;
+  }
+  .container-submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .container-general input[type=submit] {
+    padding: 5px 5px;
+  }
+}
+/* FIN CONTAINER AYUDA */
+/* INICIO INICIO STAFF */
+@media (max-width: 768px) {
+  .tarjeta-card {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    width: 90%;
+    margin: 10px 0;
+  }
+  .card .content {
+    padding: 15px;
+  }
+  .card .content h2 {
+    font-size: 1.2em;
+  }
+  .card .content p {
+    font-size: 0.9em;
+  }
+  .card .content a {
+    padding: 8px 16px;
+  }
+}
+/* FIN INICIO STAFF */
+
+/*# sourceMappingURL=style.css.map */

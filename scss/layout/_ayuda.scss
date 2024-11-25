@@ -1,0 +1,61 @@
+
+.gradiente-body{
+    background: linear-gradient(#fff, #a5e0d7);
+}
+/* INICIO TARJETA AYUDA */
+.container-general {
+    width: 55%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #ffff;
+    border-radius:11px; 
+    margin-top:40vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+    position: relative;
+    top: 30%;
+    transform: translateY(-50%);
+}
+
+.container-general input[type="text"],
+.container-general input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.container-general input[type="submit"] {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #545454;
+    color: white;
+    border: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.container-general input[type="submit"]:hover {
+    background-color: #ff7700;
+}
+
+.container-general h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #333;
+}
+
+.container-general p {
+    margin-bottom: 20px;
+    color: #555;
+    font-size: 16px;
+    line-height: 1.5;
+}
+/* FIN TARJETA AYUDA */

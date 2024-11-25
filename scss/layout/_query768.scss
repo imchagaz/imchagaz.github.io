@@ -1,0 +1,105 @@
+.menu {
+    display: none;
+}
+
+@media (min-width: 769px) {
+.carousel {
+    margin-top: 0;
+    }   
+}
+
+@media (max-width: 768px) {
+.header {
+    display: none;
+    overflow: hidden;
+} /* MENU PRINCIPAL */
+
+.menu {
+    margin-left: 10px;
+    display: block; 
+} /* MENU LATERAL */
+
+.bootstrap{
+    margin-top: 50px;
+}
+
+.petstop {
+    margin: 10px;
+    margin-left: 85%;
+}
+
+.sub-petstop {
+    margin-left: 75%;
+} /* ICONE GATO HTMLS */
+
+.flexbox .sub-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.lista {
+    display: flex;
+    display: block;
+    text-align: center;
+    background-color: #ebebeb;
+    border-radius: 20px;
+    margin-top: 30px;;
+} /* PRODUCTOS PERRO Y GATO LISTADO */
+
+li {
+    padding: 5px;
+} /* PRODUCTOS PERRO Y GATO LISTADO */
+
+.lista-productos h3 {
+    margin-bottom: 40px;
+} /* PRODUCTOS PERRO Y GATO LISTADO */
+
+.container-perfil {
+    width: 80%; 
+    margin-left: auto; 
+    margin-right: auto; 
+    padding: 10px; 
+    margin-top: 2em; 
+    text-align: center;
+} /* TARJETA AYUDA */
+
+.container-ayuda {
+    width: 80%;
+    padding: 15px;
+} /* TARJETA AYUDA */
+
+.container-ayuda h2 {
+    font-size: 1.5rem;
+} /* TARJETA AYUDA */
+
+.container-ayuda p {
+    font-size: 0.9rem;
+} /* TARJETA AYUDA */
+
+.box input[type="text"], .box input[type="email"] {
+    padding:2px;
+    font-size: 0.9rem;
+} /* TARJETA AYUDA */
+
+.container-submit input[type="submit"] {
+        padding: 3px 13px;
+        margin-left: 75%;
+        font-size: 0.9rem;
+    }
+}
+
+/* BOTON PERRO-GATO RESPOSIVE */ 
+@media (max-width: 768px) {
+    .acceso-rapido {
+        flex-direction: column; 
+        padding: 50px;
+        margin-top: 30px;
+    }
+
+    .boton {
+        flex: 1 1 auto;
+        text-align: center;
+    }
+}

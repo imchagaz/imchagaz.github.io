@@ -1,0 +1,86 @@
+/* INICIO ANUNCIO PIDA EN MINUTOS */
+.container-fluid {
+    width: 100%;
+    background-color: #ff5e00f3;
+        p{
+            text-align: center;
+            justify-content: center;
+            margin: 0;
+            padding: 0;;
+            font-family: sans-serif;
+            font-size: 1.1rem;
+            color: #fff;
+        }
+    }
+/* FIN ANUNCIO PIDA EN MINUTOS */
+/* INICIO AVISO PIDA EN MINUTOS INDEX */
+
+.aviso{
+        width: 100%;
+        background-color: #cccccc;
+        overflow: hidden;
+        white-space: nowrap;
+        width: 100%; 
+        box-sizing: border-box;
+        position: relative;
+}
+
+.scroll-text{
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 1rem;
+    color: #000;
+    animation: scroll-text 90s linear infinite;
+    display: inline-block; 
+}
+
+@keyframes scroll-text {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* FIN AVISO PIDA EN MINUTOS INDEX */
+/* INICIO MENU PRINCIPAL*/
+.header{
+    display:flex;
+    align-items: center;
+    background-color: black;
+    justify-content: space-between;
+}
+
+.petstop{
+    width: 40px;
+    margin-left: 8px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    text-decoration: none;
+}
+
+.container ul{
+    list-style: none;
+}
+
+.container li a{
+    margin:20px;
+    text-decoration: none;
+    color: #fff;
+    font-family:sans-serif;
+    transition: color 0.3s;
+}
+
+.container li a:hover {
+    color: #ffa600f3;
+}
+/* FIN MENU PRINCIPAL */
+

@@ -1,0 +1,42 @@
+/* INICIO MENU NAVEGACION INTERNO GATOS */
+
+.flexbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    font-family: sans-serif;
+}
+
+.sub-menu {
+    margin: 0px;
+    margin-bottom: 100px;
+}
+
+.lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.lista li {
+    margin: 0;
+}
+
+.lista a{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    margin: 10px;
+    border-radius: 50px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.lista a:hover {
+    color: #ff7e5f;
+}
+
+/* FIN MENU NAVEGACION INTERNO GATOS */

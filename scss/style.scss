@@ -1,0 +1,51 @@
+*{
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x:hidden;
+}
+
+h1{
+    padding: 40px;
+    text-align: center;
+    font-size: 0.8rem;
+    font-family: sans-serif;
+    color: #000;
+}
+
+h2{
+    margin: 0;
+    padding: 50px;
+    text-align: center;
+    font-size: 35px;
+    font-family: sans-serif;
+    color: #000;
+    display:inline-block;
+}
+
+h3{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    border-radius: 0px;
+    color: #000;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+// import 
+
+@import './layout/header';
+@import './layout/index';
+@import './layout/staff';
+@import './layout/menu_hamburguesa';
+@import './layout/gatos_perros_menu';
+@import './layout/footer';
+@import './layout/ayuda';
+
+
+//query
+
+@import './layout/query768';
+@import './layout/querysmax768';
+
